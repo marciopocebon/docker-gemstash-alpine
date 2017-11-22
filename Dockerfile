@@ -1,7 +1,7 @@
 FROM ruby:2.4.1-alpine
 
 RUN apk update && \
-  apk add --no-cache --update bash openssl build-base postgresql-dev
+  apk add --no-cache --update bash openssl build-base sqlite-dev postgresql-dev
 
 RUN gem update --system
 
